@@ -1,0 +1,221 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj": {}
+  },
+  "projects": {
+    "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj",
+        "projectName": "BlazorCommerceWebApp.Client",
+        "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj",
+        "packagesPath": "/Users/ali/.nuget/packages/",
+        "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj": {
+                "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
+        "projectName": "BlazorCommerceWebApp.Server",
+        "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
+        "packagesPath": "/Users/ali/.nuget/packages/",
+        "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj": {
+                "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj"
+              },
+              "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj": {
+                "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
+        "projectName": "BlazorCommerceWebApp.Shared",
+        "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
+        "packagesPath": "/Users/ali/.nuget/packages/",
+        "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ali/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
