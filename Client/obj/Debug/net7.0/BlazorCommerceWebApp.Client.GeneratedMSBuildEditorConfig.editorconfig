@@ -53,3 +53,7 @@ build_metadata.AdditionalFiles.CssScope = b-udcduqu7da
 [/Users/ali/Developer/BlazorCommerceWebApp/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wg0i7hpk7i
+
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Shared/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1Byb2R1Y3RMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-2y8fy9h8er
