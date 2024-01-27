@@ -13,8 +13,14 @@ public class Program
         builder.Services.AddControllersWithViews();
         builder.Services.AddRazorPages();
 
+        // Add swagger
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
+
         var app = builder.Build();
 
+        app.UseSwaggerUI();
+        
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
@@ -27,6 +33,7 @@ public class Program
             app.UseHsts();
         }
 
+        app.UseSwagger();
         app.UseHttpsRedirection();
 
         app.UseBlazorFrameworkFiles();
