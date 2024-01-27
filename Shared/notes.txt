@@ -1,0 +1,21 @@
+Foundations of the Project:
+- Created the product model in the shared project
+- Created the product list component in the client project
+- Created the product controller in the server project
+- Added Swagger to project
+- Installed an instance of SQL Server Express on Linux on Docker on Mac
+- Created a new MSSQL database
+- Created a connection string
+- Installed EF Core
+- Created Data directory
+- Created DataContext code
+- Created a migration using: dotnet ef migrations add <MigrationName>
+- Rollback a migration using: dotnet ef migrations remove
+- Updated DB using: dotnet ef database update
+- Applied CODE FIRST MIGRATION pattern and seed the data 
+- Completed the walking skeleton of the project
+
+- Project's flow is like: Client -> Server -> Controller -> Database -> Controller -> Server -> Client
+
+--------------------------------------------
+Using the Best Practices:
