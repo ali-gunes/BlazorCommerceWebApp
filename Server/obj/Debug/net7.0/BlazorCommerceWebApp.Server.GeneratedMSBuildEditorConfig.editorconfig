@@ -9,15 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorCommerceWebApp.Server
 build_property.RootNamespace = BlazorCommerceWebApp.Server
-build_property.ProjectDir = /Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/
+build_property.ProjectDir = /Users/ali/Developer/BlazorCommerceWebApp/Server/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server
+build_property.MSBuildProjectDirectory = /Users/ali/Developer/BlazorCommerceWebApp/Server
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/Pages/Error.cshtml]
+[/Users/ali/Developer/BlazorCommerceWebApp/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

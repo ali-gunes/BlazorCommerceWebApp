@@ -13,43 +13,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BlazorCommerceWebApp.Client
 build_property.RootNamespace = BlazorCommerceWebApp.Client
-build_property.ProjectDir = /Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/
+build_property.ProjectDir = /Users/ali/Developer/BlazorCommerceWebApp/Client/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client
+build_property.MSBuildProjectDirectory = /Users/ali/Developer/BlazorCommerceWebApp/Client
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/App.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Pages/Counter.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Pages/FetchData.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Pages/Index.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Shared/SurveyPrompt.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/_Imports.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Shared/MainLayout.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-udcduqu7da
 
-[/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/Shared/NavMenu.razor]
+[/Users/ali/Developer/BlazorCommerceWebApp/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wg0i7hpk7i

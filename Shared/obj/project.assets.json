@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
+      "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
       "projectName": "BlazorCommerceWebApp.Shared",
-      "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
+      "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
       "packagesPath": "/Users/ali/.nuget/packages/",
-      "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/obj/",
+      "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ali/.nuget/NuGet/NuGet.Config"

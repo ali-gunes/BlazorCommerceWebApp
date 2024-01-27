@@ -1271,11 +1271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
+      "projectUniqueName": "/Users/ali/Developer/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
       "projectName": "BlazorCommerceWebApp.Server",
-      "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
+      "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
       "packagesPath": "/Users/ali/.nuget/packages/",
-      "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/obj/",
+      "outputPath": "/Users/ali/Developer/BlazorCommerceWebApp/Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ali/.nuget/NuGet/NuGet.Config"
@@ -1290,11 +1290,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj": {
-              "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj"
+            "/Users/ali/Developer/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj": {
+              "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/Client/BlazorCommerceWebApp.Client.csproj"
             },
-            "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj": {
-              "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj"
+            "/Users/ali/Developer/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj": {
+              "projectPath": "/Users/ali/Developer/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj"
             }
           }
         }

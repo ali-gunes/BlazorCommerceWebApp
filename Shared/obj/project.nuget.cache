@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ClKzMTZ3dwo0J9qB9/H0SS0MqJgLwDFom15FGXyn9EbnIJyrKR1+xs6UBmDP+kRWiWyq6kJ9HJTUYsTCq0KG8g==",
+  "dgSpecHash": "5LoQEhdvQn6/yIM0r+RCi7B71GcG0ZWW6CBMGhUPgp+gUnqc4q+bplQxEsx9zo5ZclGMfPbPMoaC+9L5/IhOsQ==",
   "success": true,
-  "projectFilePath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
+  "projectFilePath": "/Users/ali/Developer/BlazorCommerceWebApp/Shared/BlazorCommerceWebApp.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

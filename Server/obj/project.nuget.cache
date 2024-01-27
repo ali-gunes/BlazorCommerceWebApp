@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DG1JnXpYKdgCjA/4GxBHLHXBYGguzM2vf9v1/iFXRW5kTxUzT+npQZ792xEZWW1He1zjHmBle3B1svUaa1QC0Q==",
+  "dgSpecHash": "MC/JFbkuk3ZucLLV1VdJR+sjWl20Dv4XDQuCLFLFxa85ggJr/sEUJXcF1SG+WgQK2p0Ag9748wqfgH+XC1x1Cw==",
   "success": true,
-  "projectFilePath": "/Users/ali/Developer/BlazorCommerceWebApp/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
+  "projectFilePath": "/Users/ali/Developer/BlazorCommerceWebApp/Server/BlazorCommerceWebApp.Server.csproj",
   "expectedPackageFiles": [
     "/Users/ali/.nuget/packages/microsoft.aspnetcore.authorization/7.0.15/microsoft.aspnetcore.authorization.7.0.15.nupkg.sha512",
     "/Users/ali/.nuget/packages/microsoft.aspnetcore.components/7.0.15/microsoft.aspnetcore.components.7.0.15.nupkg.sha512",
