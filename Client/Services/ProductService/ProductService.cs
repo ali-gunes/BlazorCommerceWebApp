@@ -14,7 +14,7 @@ public class ProductService : IProductService
     }
 
     public List<Product> Products { get; set; } = new List<Product>();
-    
+
     public async Task GetProducts()
     {
         // We want to make our HTTP call in here instead of in the product list component, it's better architecture approach
@@ -22,7 +22,14 @@ public class ProductService : IProductService
         var result = await _http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/Product");
         
         if (result is {Data: not null})
-            Products = result.Data;
+            Products = result.Data; 
 
+    }
+
+    public async Task<ServiceResponse<Product>> GetProduct(int productId)
+    {
+        var result = await _http.GetFromJsonAsync<ServiceResponse<Product>>($"api/Product/{productId}");
+
+        return result;
     }
 }

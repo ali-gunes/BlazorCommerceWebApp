@@ -1,11 +1,12 @@
 @using BlazorCommerceWebApp.Client.Services.ProductService
 @using BlazorCommerceWebApp.Shared
-@page "/product/{id:int}"
+@page "/product/{Id:int}"
 @inject IProductService ProductService
 
 @if (_product == null)
 {
-    <span>Loading Product...</span>
+    <img class="media-img" src="https://www.artzstudio.com/content/images/wordpress/2020/05/404-error-not-found-page-lost.png"/>
+    <p>@_message</p>
 }
 else
 {
@@ -23,13 +24,21 @@ else
 
 @code {
     private Product? _product = null;
+    private string? _message;
     
     [Parameter]
     public int Id { get; set; }
 
     protected override async Task OnParametersSetAsync()
     {
-        // Get the specific product from product service with the lambda expression
-        _product = ProductService.Products.Find(p => p.Id == Id);
+        _message = "Loading Product...";
+        var result = await ProductService.GetProduct(productId: Id);
+
+        if (!result.Success)
+            _message = result.Message;
+        else
+        {
+            _product = result.Data;
+        }
     }
 }
