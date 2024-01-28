@@ -1,43 +1,48 @@
 @using BlazorCommerceWebApp.Shared
 @using System.Net
-@inject HttpClient Http
+@using BlazorCommerceWebApp.Client.Services.ProductService
+@inject IProductService _service
+@*Dependency injection for client side ProductService*@
 
-<ul class="list-unstyled">
-    @foreach (var product in Products)
-    {
-        <li class="media my-3">
-            <div class="media-img-wrapper mr-2">
-                <a href="#">
-                    <img class="media-img" src="@product.ImageUrl" alt="@product.Name"/>
-                </a>
-            </div>
-            <div class="media-body">
-                <a href="#">
-                    <h4 class="mb-0">@product.Name</h4>
-                </a>
-                <p>@product.Description</p>
-                <h5 class="price">$@product.Price</h5>
-            </div>
-        </li>
-        <hr class="rounded">
-    }
-</ul>
-
+@if (_service.Products == null || _service.Products.Count == 0)
+{
+    <span>Loading Products...</span>
+}
+else
+{
+    <ul class="list-unstyled">
+        @foreach (var product in _service.Products)
+        {
+            <li class="media my-3">
+                <div class="media-img-wrapper mr-2">
+                    <a href="#">
+                        <img class="media-img" src="@product.ImageUrl" alt="@product.Name"/>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <a href="#">
+                        <h4 class="mb-0">@product.Name</h4>
+                    </a>
+                    <p>@product.Description</p>
+                    <h5 class="price">$@product.Price</h5>
+                </div>
+            </li>
+            <hr class="rounded">
+        }
+    </ul>
+}
 
 @code {
 
     // Create an empty list object named Products
-    private static List<Product> Products = new List<Product>();
-
-    // We have to make a HTTP Get call to get the products from the server (aka backend)
+    // We don't need for a variable Products in here because we are getting our products from client side ProductService
+    //private static List<Product> Products = new List<Product>();
+    
+    // Instead of making HTTP call here, we moved it to ProductService
     protected override async Task OnInitializedAsync()
     {
-        // The GetFromJsonAsync method will convert our product model and the data to JSON and request it from backend asynchronously, we write the data type and the route (aka request uri) and let the magic happen!
-        var response = await Http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/Product");
-
-        // Weird way to say && in if
-        if (response is { Data: not null })
-            Products = response.Data;
+        // We just call the GetProducts method in the client side product service, it populates the Products list and we can use it here.
+        await _service.GetProducts();
     }
 
 }

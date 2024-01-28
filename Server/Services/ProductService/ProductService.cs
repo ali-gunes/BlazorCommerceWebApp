@@ -6,6 +6,7 @@ namespace BlazorCommerceWebApp.Services.ProductService;
 
 public class ProductService : IProductService
 {
+    // Dependency injection for DataContext
     private readonly DataContext _context;
 
     public ProductService(DataContext context)
