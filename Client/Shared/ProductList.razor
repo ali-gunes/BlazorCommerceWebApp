@@ -1,26 +1,26 @@
 @using BlazorCommerceWebApp.Shared
 @using System.Net
 @using BlazorCommerceWebApp.Client.Services.ProductService
-@inject IProductService _service
+@inject IProductService ProductService
 @*Dependency injection for client side ProductService*@
 
-@if (_service.Products == null || _service.Products.Count == 0)
+@if (ProductService.Products.Count == 0)
 {
     <span>Loading Products...</span>
 }
 else
 {
     <ul class="list-unstyled">
-        @foreach (var product in _service.Products)
+        @foreach (var product in ProductService.Products)
         {
             <li class="media my-3">
                 <div class="media-img-wrapper mr-2">
-                    <a href="#">
+                    <a href="/product/@product.Id">
                         <img class="media-img" src="@product.ImageUrl" alt="@product.Name"/>
                     </a>
                 </div>
                 <div class="media-body">
-                    <a href="#">
+                    <a href="/product/@product.Id">
                         <h4 class="mb-0">@product.Name</h4>
                     </a>
                     <p>@product.Description</p>
@@ -42,7 +42,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         // We just call the GetProducts method in the client side product service, it populates the Products list and we can use it here.
-        await _service.GetProducts();
+        await ProductService.GetProducts();
     }
 
 }

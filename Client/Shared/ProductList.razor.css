@@ -23,10 +23,6 @@
     text-align: center;
 }
 
-.price{
-    color: green;
-}
-
 /* Rounded border */
 hr.rounded {
     border-top: 8px solid #bbb;
