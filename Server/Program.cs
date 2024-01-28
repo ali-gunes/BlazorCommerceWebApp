@@ -1,4 +1,5 @@
 ﻿using BlazorCommerceWebApp.Data;
+using BlazorCommerceWebApp.Services.ProductService;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +24,9 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        // Let's say we created another product service for testing purposes and we want to use productservice2 for that, instead of changing the code in the controller, we can just change the below lines productservice, that way whenever we use dependency injection, IProductService implements our mock ProductService for test. This is a really useful and handy trick.
+        builder.Services.AddScoped<IProductService, ProductService>();
+        
         var app = builder.Build();
 
         app.UseSwaggerUI();
