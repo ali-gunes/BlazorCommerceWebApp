@@ -1,5 +1,7 @@
 ﻿using BlazorCommerceWebApp.Data;
+using BlazorCommerceWebApp.Services.CategoryService;
 using BlazorCommerceWebApp.Services.ProductService;
+using BlazorCommerceWebApp.Shared;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +28,7 @@ public class Program
 
         // Let's say we created another product service for testing purposes and we want to use ProductService2 for that, instead of changing the code in the controller, we can just change the below lines ProductService, that way whenever we use dependency injection, IProductService implements our mock ProductService for test. This is a really useful and handy trick.
         builder.Services.AddScoped<IProductService, ProductService>();
+        builder.Services.AddScoped<ICategoryService, CategoryService>();
         
         var app = builder.Build();
 
