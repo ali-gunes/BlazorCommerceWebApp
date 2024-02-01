@@ -20,7 +20,8 @@ public class CategoryService : ICategoryService
 
         return new ServiceResponse<List<Category>>
         {
-            Data = categories
+            Data = categories,
+            Success = true
         };
     }
 }
