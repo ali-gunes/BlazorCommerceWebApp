@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorCommerceWebApp.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e14b13c6813a427ecec1cec1050a937d3e3fd8af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83f7d2a76aec50521b68a471ec8c450f27d45e0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorCommerceWebApp.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorCommerceWebApp.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
