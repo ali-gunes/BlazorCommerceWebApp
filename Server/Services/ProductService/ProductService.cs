@@ -18,7 +18,8 @@ public class ProductService : IProductService
     {
         var response = new ServiceResponse<List<Product>>
         {
-            Data = await _context.Products.ToListAsync()
+            Data = await _context.Products.ToListAsync(),
+            Success = true
         };
 
         return response;
@@ -40,6 +41,19 @@ public class ProductService : IProductService
             response.Success = true;
             response.Data = product;
         }
+
+        return response;
+    }
+
+    public async Task<ServiceResponse<List<Product>>> GetProductsByCategoryAsync(string categoryUrl)
+    {
+        // Create a new service response, get the products from DB Context and use where statement to match products with the same category url with this method's parameter. Turn everything to list and return the list.
+        var response = new ServiceResponse<List<Product>>
+        {
+            Data = await _context.Products
+                .Where(p => p.Category.Url.ToLower().Equals(categoryUrl.ToLower())).ToListAsync(),
+            Success = true
+        };
 
         return response;
     }

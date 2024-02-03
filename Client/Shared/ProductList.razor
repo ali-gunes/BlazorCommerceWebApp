@@ -2,6 +2,7 @@
 @using System.Net
 @using BlazorCommerceWebApp.Client.Services.ProductService
 @inject IProductService ProductService
+@implements IDisposable
 @*Dependency injection for client side ProductService*@
 
 @if (ProductService.Products.Count == 0)
@@ -33,16 +34,20 @@ else
 }
 
 @code {
-
-    // Create an empty list object named Products
-    // We don't need for a variable Products in here because we are getting our products from client side ProductService
-    //private static List<Product> Products = new List<Product>();
-    
     // Instead of making HTTP call here, we moved it to ProductService
-    protected override async Task OnInitializedAsync()
+    // We make the product list request in the index page now.
+    
+    protected override void OnInitialized()
     {
-        // We just call the GetProducts method in the client side product service, it populates the Products list and we can use it here.
-        await ProductService.GetProducts();
+        // Notifies the component that its state has changed. When applicable, this will cause the component to be re-rendered.
+        // Subscribe to the products changed action
+        ProductService.ProductsChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        // Unsubscribe to the products changed action
+        ProductService.ProductsChanged -= StateHasChanged;
     }
 
 }

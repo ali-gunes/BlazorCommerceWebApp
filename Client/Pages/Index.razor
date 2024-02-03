@@ -1,4 +1,7 @@
 ﻿@page "/"
+@page "/{categoryUrl}"
+@using BlazorCommerceWebApp.Client.Services.ProductService
+@inject IProductService ProductService
 
 <PageTitle>Revolution Market</PageTitle>
 
@@ -6,6 +9,15 @@
 
 Devrim için ihtiyacın olan her şey burada
 
-@* <SurveyPrompt Title="How is Blazor working for you?" /> *@
-
 <ProductList/>
+
+@code
+{
+    [Parameter]
+    public string? CategoryUrl { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await ProductService.GetProducts(categoryUrl: CategoryUrl);
+    }
+}
